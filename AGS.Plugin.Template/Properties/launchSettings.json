@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\temp\\ags 3.6.1.12 beta 13\\AGSEditor.exe"
+    }
+  }
+}

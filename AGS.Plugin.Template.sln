@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AGS.Plugin.Template", "AGS.Plugin.Template\AGS.Plugin.Template.fsproj", "{45B32E0D-A75D-4A2F-AF05-8FB9019C3DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B32E0D-A75D-4A2F-AF05-8FB9019C3DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B32E0D-A75D-4A2F-AF05-8FB9019C3DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B32E0D-A75D-4A2F-AF05-8FB9019C3DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B32E0D-A75D-4A2F-AF05-8FB9019C3DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89574ED2-EB94-4B43-A86B-3D975C9FAF51}
+	EndGlobalSection
+EndGlobal

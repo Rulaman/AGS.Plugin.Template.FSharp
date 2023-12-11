@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon>Resources\template.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="README.txt" />
+    <Content Include="Resources\template.ico" />
+    <EmbeddedResource Include="Resources\template.ico" />
+    <Compile Include="AGSPanel.fs" />
+    <Compile Include="Panel.fs" />
+    <Compile Include="Plugin.fs" />
+    <Compile Include="PluginLoader.fs" />
+    <None Include="Info.plist" />
+    <None Include="MacIcon.icns" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AGS.Types">
+      <HintPath>external\AGS.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="rem echo f | xcopy ...&#xD;&#xA;echo d | xcopy &quot;$(TargetPath)&quot; &quot;C:\temp\ags 3.6.1.12 beta 13\$(TargetFileName)&quot; /Y /S&#xD;&#xA;echo d | xcopy &quot;$(TargetDir)FSharp.Core.dll&quot; &quot;C:\temp\ags 3.6.1.12 beta 13\FSharp.Core.dll&quot; /Y /S" />
+  </Target>
+</Project>
